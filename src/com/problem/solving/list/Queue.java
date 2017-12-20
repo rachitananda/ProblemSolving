@@ -11,7 +11,7 @@ import com.problem.solving.Utils;
  */
 public class Queue implements Problem {
 	int capacity = 10;
-	private int arr[] = new int[capacity];// { 1,2, 3, 4 , 5, 6};
+	private int arr[] = new int[capacity];
 
 	int start = -1;
 	int size = 0;
@@ -19,7 +19,7 @@ public class Queue implements Problem {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+
 		System.out.println(getClass().getSimpleName());
 		enqueue(1);
 //		enqueue(2);

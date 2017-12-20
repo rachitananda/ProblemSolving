@@ -1,5 +1,6 @@
 package com.problem.solving;
 
+import com.problem.solving.array.FindTriplets;
 import com.problem.solving.array.PerfectArray;
 import com.problem.solving.array.ReverseArray;
 import com.problem.solving.array.RotateArray;
@@ -16,7 +17,7 @@ import com.problem.solving.string.UpperCase;
 public class MyClass {
 
 	public static void main(String[] args) {
-		new Queue().execute();
+		new FindTriplets().execute();
 	}
 
 }

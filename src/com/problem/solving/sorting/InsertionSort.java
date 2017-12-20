@@ -11,7 +11,7 @@ public class InsertionSort implements Problem  {
 		System.out.println(getClass().getSimpleName());
 		Utils.printArray(doInsertionSort(arr));
 	}
-	 private int[] doInsertionSort(int[] input){
+	 public static int[] doInsertionSort(int[] input){
         Utils.printArray(input);
 	        int temp;
 	        for (int i = 1; i < input.length; i++) {
