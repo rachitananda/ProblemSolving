@@ -2,8 +2,8 @@ package com.problem.solving.tree;
 
 public class Node {
 
-	 int data;
-	 Node right, left;
+	int data;
+	Node right, left;
 
 	public Node(int data) {
 		this.data = data;

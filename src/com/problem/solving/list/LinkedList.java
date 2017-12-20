@@ -1,4 +1,6 @@
-package com.problem.solving;
+package com.problem.solving.list;
+
+import com.problem.solving.Problem;
 
 public class LinkedList implements Problem {
 
