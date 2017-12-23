@@ -1,9 +1,9 @@
 package com.problem.solving.array;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 import com.problem.solving.Utils;
 
-public class ReverseArray implements Problem {
+public class ReverseArray implements ProblemI {
 	int[] arr = { 1, 2, 3 ,4};
 
 	@Override

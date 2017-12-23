@@ -1,12 +1,12 @@
 package com.problem.solving.search;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 /**
  * O(logn)
  * @author rachita
  *
  */
-public class BinarySearch  implements Problem{
+public class BinarySearch  implements ProblemI{
 	//works on sorted array
 	int arr[]= new int[] {1,3,6,9,11,23,55};
 

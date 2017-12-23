@@ -1,6 +1,6 @@
 package com.problem.solving.sorting;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 import com.problem.solving.Utils;
 
 /**
@@ -9,7 +9,7 @@ import com.problem.solving.Utils;
  * Time complexity - O(n2) worst case
  * Space complexity - O(1)  - does not take extra space
  */
-public class SelectionSort implements Problem {
+public class SelectionSort implements ProblemI {
 	public SelectionSort(){
 		System.out.println("SelectionSort");
 	}

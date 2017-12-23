@@ -2,7 +2,7 @@ package com.problem.solving.factorial;
 
 import java.util.Scanner;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 
 /**
  * https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n/0
@@ -14,7 +14,7 @@ import com.problem.solving.Problem;
  * @author rachita
  */
 
-public class Factorial implements Problem {
+public class Factorial implements ProblemI {
 	int t;
 
 	@Override

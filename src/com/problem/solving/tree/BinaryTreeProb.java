@@ -1,8 +1,8 @@
 package com.problem.solving.tree;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 
-public class BinaryTreeProb implements Problem {
+public class BinaryTreeProb implements ProblemI {
 	private BinaryTree tree= new BinaryTree();
 	private Node node2= new Node(2);
 	private Node node3= new Node(3);

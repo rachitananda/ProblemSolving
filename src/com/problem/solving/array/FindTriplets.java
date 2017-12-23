@@ -1,6 +1,6 @@
 package com.problem.solving.array;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 import com.problem.solving.sorting.InsertionSort;
 
 /**
@@ -13,7 +13,7 @@ import com.problem.solving.sorting.InsertionSort;
  *         is 24, then there is a triplet (12, 3 and 9) present in array whose
  *         sum is 24.
  */
-public class FindTriplets implements Problem {
+public class FindTriplets implements ProblemI {
 
 	int arr[] = new int[] { 12, 3, 4, 1, 6, 9 };
 

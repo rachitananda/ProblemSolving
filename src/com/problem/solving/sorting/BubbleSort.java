@@ -1,6 +1,6 @@
 package com.problem.solving.sorting;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 import com.problem.solving.Utils;
 
 /**
@@ -8,7 +8,7 @@ import com.problem.solving.Utils;
  * @author rachita Time complexity - O(n2) worst case Space complexity - O(1) -
  *         does not take extra space
  */
-public class BubbleSort implements Problem {
+public class BubbleSort implements ProblemI {
 
 	int[] arr = new int[] { 1, 5, 6, 89, 12, 44 };
 

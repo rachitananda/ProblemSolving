@@ -2,14 +2,14 @@ package com.problem.solving.string;
 
 import java.util.Scanner;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 /**
  * https://practice.geeksforgeeks.org/problems/remove-vowels-from-string/0
  * Given a string, remove the vowels from the string and print the string without vowels.
  * @author rachita
  *
  */
-public class RemoveVowel implements Problem{
+public class RemoveVowel implements ProblemI{
 
 	@Override
 	public void execute() {

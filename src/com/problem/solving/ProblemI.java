@@ -1,6 +1,6 @@
 package com.problem.solving;
 
-public interface Problem {
+public interface ProblemI {
 	public void execute();
 
 }

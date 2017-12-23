@@ -2,7 +2,7 @@ package com.problem.solving.string;
 
 import java.util.Scanner;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 
 /**
  * Given two strings S1 and S2 as input, the task is to merge them
@@ -11,7 +11,7 @@ import com.problem.solving.Problem;
  * @author rachita
  *
  */
-public class MergeStringAlternate implements Problem {
+public class MergeStringAlternate implements ProblemI {
 
 	@Override
 	public void execute() {

@@ -1,6 +1,6 @@
 package com.problem.solving.tree;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 
 public class BinaryTree {
 	

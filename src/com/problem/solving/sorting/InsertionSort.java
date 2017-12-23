@@ -1,8 +1,8 @@
 package com.problem.solving.sorting;
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 import com.problem.solving.Utils;
 
-public class InsertionSort implements Problem  {
+public class InsertionSort implements ProblemI  {
 	int[] arr = new int[] { 8, 7, 11, 1, 0, 9,38,22 };
 	
 	@Override

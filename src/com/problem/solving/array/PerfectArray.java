@@ -7,9 +7,9 @@ package com.problem.solving.array;
 
 import java.util.Scanner;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 
-public class PerfectArray implements Problem{
+public class PerfectArray implements ProblemI{
 	
 	int testcaseCount ;
 

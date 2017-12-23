@@ -2,7 +2,7 @@ package com.problem.solving.string;
 
 import java.util.Scanner;
 
-import com.problem.solving.Problem;
+import com.problem.solving.ProblemI;
 
 /**
  * https://practice.geeksforgeeks.org/problems/upper-case-conversion/0 Given a
@@ -11,7 +11,7 @@ import com.problem.solving.Problem;
  * @author rachita
  *
  */
-public class UpperCase implements Problem {
+public class UpperCase implements ProblemI {
 
 	@Override
 	public void execute() {
