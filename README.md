@@ -29,7 +29,11 @@ String
 - Uppercase
 
 Tree 
-- Binary Tree (TODO not completed)
+- Binary Tree (Todo)
+
+Matrix
+- Find Element
+- sum of sub matrices (todo)
 
 
 
