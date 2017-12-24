@@ -35,6 +35,8 @@ Matrix
 - Find Element
 - sum of sub matrices (todo)
 
+NumberSystem
+- Binary/Decimal coversion
 
 
 
