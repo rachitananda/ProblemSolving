@@ -12,8 +12,9 @@ Factorial
 - Factorial Limit
 
 List
--Linked List
--Queue
+- Linked List
+- Queue
+- Circular linked list
 
 Search
 - Binary Search
@@ -37,6 +38,11 @@ Matrix
 
 NumberSystem
 - Binary/Decimal coversion
+
+Coordinate
+- Overlapping Rectangle
+
+
 
 
 

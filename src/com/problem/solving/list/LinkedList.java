@@ -4,18 +4,8 @@ import com.problem.solving.ProblemI;
 
 public class LinkedList implements ProblemI {
 
-	Node head = new Node(1);
-	Node second = new Node(2);
-
-	class Node {
-		int data;
-		Node next;
-
-		Node(int data) {
-			this.data = data;
-			this.next = null;
-		}
-	}
+	private Node head = new Node(1);
+	private Node second = new Node(2);
 
 	@Override
 	public void execute() {

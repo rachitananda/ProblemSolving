@@ -1,5 +1,6 @@
 package com.problem.solving.numbersytem;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.problem.solving.BaseProblem;
