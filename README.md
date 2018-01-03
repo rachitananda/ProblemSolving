@@ -15,6 +15,8 @@ List
 - Linked List
 - Queue
 - Circular linked list
+- Blocking Queue with Intrinsic locking
+- MyArrayList , arraylist implementation
 
 Search
 - Binary Search
