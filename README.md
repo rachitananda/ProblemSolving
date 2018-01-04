@@ -32,7 +32,9 @@ String
 - Uppercase
 
 Tree 
-- Binary Tree (Todo)
+- Binary Tree 
+- Binary Tree Traversal: Inorder, Preorder,PostOrder, LevelOrder/BFS
+- Binary Search Tree
 
 Matrix
 - Find Element

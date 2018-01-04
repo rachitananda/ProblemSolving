@@ -1,14 +1,14 @@
 package com.problem.solving;
 
-import com.problem.solving.factorial.Factorial;
-import com.problem.solving.list.BlockingQueue;
-import com.problem.solving.list.CircularLinkedList;
-import com.problem.solving.list.MyArrayList;
+
+import com.problem.solving.tree.BinarySearchTree;
+import com.problem.solving.tree.TreeTraversal;
+
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
-		new BlockingQueue().execute();
+		new BinarySearchTree().execute();
 	}
 
 }
