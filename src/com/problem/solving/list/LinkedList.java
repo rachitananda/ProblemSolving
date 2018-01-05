@@ -1,8 +1,8 @@
 package com.problem.solving.list;
 
-import com.problem.solving.ProblemI;
+import com.problem.solving.BaseProblem;
 
-public class LinkedList implements ProblemI {
+public class LinkedList extends BaseProblem {
 
 	private Node head = new Node(1);
 	private Node second = new Node(2);

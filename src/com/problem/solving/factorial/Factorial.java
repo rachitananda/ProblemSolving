@@ -1,8 +1,8 @@
 package com.problem.solving.factorial;
 
-import java.util.Scanner;
+import com.problem.solving.BaseProblem;
 
-import com.problem.solving.ProblemI;
+import java.util.Scanner;
 
 /**
  * https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n/0
@@ -14,7 +14,7 @@ import com.problem.solving.ProblemI;
  * @author rachita
  */
 
-public class Factorial implements ProblemI {
+public class Factorial extends BaseProblem {
 	int t;
 
 	@Override

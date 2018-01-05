@@ -1,6 +1,6 @@
 package com.problem.solving.sorting;
 
-import com.problem.solving.ProblemI;
+import com.problem.solving.BaseProblem;
 import com.problem.solving.Utils;
 
 /**
@@ -9,10 +9,8 @@ import com.problem.solving.Utils;
  * Time complexity - O(n2) worst case
  * Space complexity - O(1)  - does not take extra space
  */
-public class SelectionSort implements ProblemI {
-	public SelectionSort(){
-		System.out.println("SelectionSort");
-	}
+public class SelectionSort extends BaseProblem {
+
 	int[] arr = new int[] { 8, 7, 11, 1, 0, 9,38,22 };
 
 
@@ -31,7 +29,6 @@ public class SelectionSort implements ProblemI {
 			int minPos = i;
 			for (int j = i + 1; j <= n - 1; j++) {
 				if (arr[j] < arr[minPos]) {
-//					minPos = j;
 					// swap
 					int temp = arr[minPos];
 					arr[minPos] = arr[j];

@@ -1,15 +1,14 @@
 package com.problem.solving.array;
 
-import com.problem.solving.ProblemI;
+import com.problem.solving.BaseProblem;
 import com.problem.solving.Utils;
 
-public class ReverseArray implements ProblemI {
+public class ReverseArray extends BaseProblem {
 	int[] arr = { 1, 2, 3 ,4};
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-		System.out.println("ReverseArray");
+
 		reverse1();
 	}
 

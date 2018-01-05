@@ -1,8 +1,8 @@
 package com.problem.solving.string;
 
-import java.util.Scanner;
+import com.problem.solving.BaseProblem;
 
-import com.problem.solving.ProblemI;
+import java.util.Scanner;
 
 /**
  * Given two strings S1 and S2 as input, the task is to merge them
@@ -11,7 +11,7 @@ import com.problem.solving.ProblemI;
  * @author rachita
  *
  */
-public class MergeStringAlternate implements ProblemI {
+public class MergeStringAlternate extends BaseProblem {
 
 	@Override
 	public void execute() {

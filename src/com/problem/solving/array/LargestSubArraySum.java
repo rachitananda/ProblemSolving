@@ -1,13 +1,13 @@
 package com.problem.solving.array;
 
-import com.problem.solving.ProblemI;
+import com.problem.solving.BaseProblem;
 
 /**
  * http://www.geeksforgeeks.org/largest-sum-contiguous-subarray 
  * Kadane algo
  * @author rachita
  */
-public class LargestSubArraySum implements ProblemI {
+public class LargestSubArraySum extends BaseProblem {
 
 	@Override
 	public void execute() {

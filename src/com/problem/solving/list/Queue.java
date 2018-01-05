@@ -1,7 +1,6 @@
 package com.problem.solving.list;
 
-import com.problem.solving.ProblemI;
-import com.problem.solving.Utils;
+import com.problem.solving.BaseProblem;
 
 /**
  * Queue- FIFO with array
@@ -9,7 +8,7 @@ import com.problem.solving.Utils;
  * @author rachita
  *
  */
-public class Queue implements ProblemI {
+public class Queue extends BaseProblem {
 	int capacity = 10;
 	private int arr[] = new int[capacity];
 

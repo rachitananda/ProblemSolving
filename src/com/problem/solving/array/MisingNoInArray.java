@@ -1,21 +1,21 @@
 package com.problem.solving.array;
 /**
- * https://practice.geeksforgeeks.org/problems/perfect-array/0
+ *
  * @author rachita
  *
  */
 
+import com.problem.solving.BaseProblem;
+
 import java.util.Scanner;
 
-import com.problem.solving.ProblemI;
-
-public class PerfectArray implements ProblemI{
+public class MisingNoInArray extends BaseProblem{
 	
 	int testcaseCount ;
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+
 		Scanner reader = new Scanner(System.in);  // Reading from System.in
 		System.out.println("Enter test case count N: ");
 		int testcaseCount = reader.nextInt(); // Scans the next token of the input as an int.

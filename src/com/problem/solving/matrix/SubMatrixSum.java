@@ -1,7 +1,5 @@
 package com.problem.solving.matrix;
 
-import java.util.Scanner;
-
 import com.problem.solving.BaseProblem;
 
 /**
@@ -16,7 +14,9 @@ public class SubMatrixSum extends BaseProblem {
 	public void execute() {
 
 		int n = 3, k = 2;
-		int[][] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		int[][] arr = { { 1, 2, 3 },
+						{ 4, 5, 6 },
+						{ 7, 8, 9 } };
 
 		//TODO issues with logic
 //		for (int i = 0; i <=(n-k); i++) {

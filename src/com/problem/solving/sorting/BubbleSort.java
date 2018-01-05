@@ -1,6 +1,6 @@
 package com.problem.solving.sorting;
 
-import com.problem.solving.ProblemI;
+import com.problem.solving.BaseProblem;
 import com.problem.solving.Utils;
 
 /**
@@ -8,14 +8,13 @@ import com.problem.solving.Utils;
  * @author rachita Time complexity - O(n2) worst case Space complexity - O(1) -
  *         does not take extra space
  */
-public class BubbleSort implements ProblemI {
+public class BubbleSort extends BaseProblem {
 
 	int[] arr = new int[] { 1, 5, 6, 89, 12, 44 };
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-		System.out.println("BubbleSort");
+
 //		 sort();
 		sortrecursive(arr, arr.length);
 

@@ -1,9 +1,9 @@
 package com.problem.solving.array;
 
+import com.problem.solving.BaseProblem;
+
 import java.util.HashMap;
 import java.util.Scanner;
-
-import com.problem.solving.ProblemI;
 
 /**
  * https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
@@ -12,7 +12,7 @@ import com.problem.solving.ProblemI;
  * @author rachita
  *
  */
-public class PairsWithGivenSum implements ProblemI{
+public class PairsWithGivenSum extends BaseProblem {
 
 	@Override
 	public void execute() {
