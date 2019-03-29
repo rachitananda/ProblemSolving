@@ -1,6 +1,5 @@
 package com.problem.solving.tree;
 
-import com.problem.solving.ProblemI;
 
 import java.util.LinkedList;
 import java.util.Queue;
