@@ -67,7 +67,7 @@ public class PairsWithGivenSum extends BaseProblem {
 	 */
 	private int countPairsWithSum1(int[] arr, int k) {
 		int count=0;
-		HashMap<Integer, Integer> hmap= new HashMap<>();
+		HashMap<Integer, Integer> hmap= new HashMap<Integer, Integer>();
 		for(int i=0;i<arr.length;i++) {
 			int sumPair=k-arr[i];
 			if(hmap.containsValue(arr[i])) {

@@ -52,16 +52,13 @@ public class BlockingQueue extends BaseProblem {
     @Override
     public void execute() {
 
-
         Thread t1 = new Thread(new Runnable() {
-            @Override
             public void run() {
                 dequeue();
 
             }
         });
         Thread t2 = new Thread(new Runnable() {
-            @Override
             public void run() {
                 enqueue(new Integer(1));
                 enqueue(new Integer(2));

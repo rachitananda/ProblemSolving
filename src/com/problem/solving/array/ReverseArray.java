@@ -9,7 +9,7 @@ public class ReverseArray extends BaseProblem {
 	@Override
 	public void execute() {
 
-		reverse1();
+		reverse2();
 	}
 
 	private void reverse() {
@@ -40,6 +40,24 @@ public class ReverseArray extends BaseProblem {
 		
 
 
+	}
+	
+	
+	
+	private void reverse2(){
+		
+		for(int i=0;i<arr.length;i++){
+			int temp =arr[i];
+			if(i==arr.length-1){
+				arr[i]=temp;
+				break;
+			}
+			arr[i]=arr[i+1];
+		
+		}
+		Utils.printArray(arr);
+		
+		
 	}
 	
 	private void reverse1() {

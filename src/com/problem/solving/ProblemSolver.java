@@ -1,13 +1,16 @@
 package com.problem.solving;
 
 
-import com.problem.solving.list.BlockingQueue;
+import com.problem.solving.array.PairsWithGivenSum;
 
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
-		new BlockingQueue().execute();
+		new PairsWithGivenSum().execute();
 	}
+	
+
+	
 
 }
