@@ -1,9 +1,9 @@
 package com.problem.solving.array;
 
-import com.problem.solving.BaseProblem;
-
 import java.util.HashMap;
 import java.util.Scanner;
+
+import com.problem.solving.BaseProblem;
 
 /**
  * https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
@@ -60,7 +60,7 @@ public class PairsWithGivenSum extends BaseProblem {
 		return count;
 	}
 	/**
-	 * O(n^2)
+	 * O(n)
 	 * @param arr
 	 * @param k
 	 * @return
@@ -69,11 +69,11 @@ public class PairsWithGivenSum extends BaseProblem {
 		int count=0;
 		HashMap<Integer, Integer> hmap= new HashMap<Integer, Integer>();
 		for(int i=0;i<arr.length;i++) {
-			int sumPair=k-arr[i];
+			int sumPair=k-arr[i]  ;
 			if(hmap.containsValue(arr[i])) {
 				count++;
 			}else {
-			hmap.put(arr[i], k-arr[i]);
+			hmap.put(arr[i], sumPair);
 			}
 			
 		}
