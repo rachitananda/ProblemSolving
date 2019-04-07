@@ -7,6 +7,7 @@ Array Problems
 - Perfect Array
 - Reverse Array
 - Rotate Array
+- Largest Sub Array Sum
 
 Factorial
 - Factorial Limit
@@ -45,6 +46,10 @@ NumberSystem
 
 Coordinate
 - Overlapping Rectangle
+
+Stack
+- Stack with Array
+- Stack with Linked list
 
 
 
