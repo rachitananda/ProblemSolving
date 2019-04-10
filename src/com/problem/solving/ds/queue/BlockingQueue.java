@@ -1,4 +1,4 @@
-package com.problem.solving.list;
+package com.problem.solving.ds.queue;
 
 import com.problem.solving.BaseProblem;
 

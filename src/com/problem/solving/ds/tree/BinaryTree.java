@@ -1,4 +1,4 @@
-package com.problem.solving.tree;
+package com.problem.solving.ds.tree;
 
 
 import java.util.LinkedList;

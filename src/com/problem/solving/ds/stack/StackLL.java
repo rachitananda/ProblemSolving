@@ -1,4 +1,4 @@
-package com.problem.solving.stack;
+package com.problem.solving.ds.stack;
 
 /**
  * Stack implementation with Linked List
@@ -37,8 +37,9 @@ public class StackLL {
 			top = node;
 		} else {
 			StackNode temp = top;
-			node.next = temp;
+			//node.next = temp;
 			top = node;
+			node.next=temp;
 		}
 		print();
 	}
@@ -50,10 +51,15 @@ public class StackLL {
 		print();
 	}
 	static void print(){
-		StackNode node= top;
-		while(node.next!=null){
-			System.out.print(node.data+" ");
+		if(isEmpty()){
+			return;
 		}
+		System.out.println();
+		StackNode node= top;
+		do{
+			System.out.print(+node.data+" ");
+			node=node.next;
+		}while(node!=null);
 	}
 	static boolean isEmpty() {
 		if (top == null) {

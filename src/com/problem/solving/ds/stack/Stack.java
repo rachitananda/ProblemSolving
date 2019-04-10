@@ -1,4 +1,4 @@
-package com.problem.solving.stack;
+package com.problem.solving.ds.stack;
 
 /**
  * Stack with Arrays Pros: Easy to implement. Memory is saved as pointers are

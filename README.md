@@ -14,10 +14,14 @@ Factorial
 
 List
 - Linked List
-- Queue
 - Circular linked list
 - Blocking Queue with Intrinsic locking
 - MyArrayList , arraylist implementation
+
+Queue
+- Queue with array
+- Blocking Queue
+- Circular Queue
 
 Search
 - Binary Search

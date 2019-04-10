@@ -1,14 +1,19 @@
-package com.problem.solving.list;
+package com.problem.solving.ds.queue;
 
 import com.problem.solving.BaseProblem;
 
 /**
  * Queue- FIFO with array
- * 
+ * enqueue(), dequeue(), isFull(), isEmpty(), front() and rear() is O(1).
+ * https://www.sanfoundry.com/java-program-implement-queue/
+ * https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/
  * @author rachita
- *
+ * Applications of queue
+ *1) When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
+2) When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
+     Queu used in BFS 
  */
-public class Queue extends BaseProblem {
+public class QueueImp extends BaseProblem {
 	int capacity = 10;
 	private int arr[] = new int[capacity];
 
@@ -20,13 +25,26 @@ public class Queue extends BaseProblem {
 	public void execute() {
 
 		System.out.println(getClass().getSimpleName());
-		enqueue(1);
+//		enqueue(1);
+////		enqueue(2);
+////		enqueue(3);
+//		dequeue();
 //		enqueue(2);
 //		enqueue(3);
-		dequeue();
-		enqueue(2);
-		enqueue(3);
-		dequeue();
+//		dequeue();
+		
+		CircularQueue cq= new CircularQueue(5);
+		cq.enqueue(1);
+		cq.enqueue(2);
+		cq.enqueue(3);
+		cq.enqueue(4);
+		cq.enqueue(5);
+		cq.enqueue(5);
+		cq.dequeue();
+		cq.enqueue(6);
+		cq.enqueue(6);
+		cq.dequeue();
+		cq.enqueue(7);
 
 	}
 
