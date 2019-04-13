@@ -1,74 +1,132 @@
 package com.problem.solving.ds.list;
 
-import com.problem.solving.BaseProblem;
+import java.util.HashSet;
 
-public class LinkedList extends BaseProblem {
+public class LinkedList {
+	Node start;
+	
+//	public LinkedList(Node start){
+//		this.start= start;
+//		this.start=null;
+//	}
 
-	private Node head = new Node(1);
-	private Node second = new Node(2);
-
-	@Override
-	public void execute() {
-		// TODO Auto-generated method stub
-		head.next = second;
-		System.out.println("LINKED LIST");
-		printList();
-		insertAtEnd(new Node(3));
-		insertAtBegining(new Node(0));
-		insertAfterN(new Node(9), 1);
+	/**
+	 * O(n)
+	 * @param node
+	 */
+	public void insertAtEnd(Node node){
+		
+		if(start==null){
+			node.next=null;
+			start= node;	
+		}else{
+			Node n =  start;
+			while(n.next!=null){
+				n= n.next;
+			}
+			n.next= node;
+			node.next=null;
+			
+		}
+		
 	}
-
-	private void insertAfterN(Node node, int n) {
-		int ctr = 0;
-		Node itr = head;
-
-		while (itr.next != null) {
-			ctr++;
-			itr = itr.next;
-			if (ctr == n) {
-				Node temp = itr.next;
-				itr.next = node;
-				node.next = temp;
+	
+	public void insertAtStart(Node node){
+		if(start==null){
+			start= node;
+			return;
+		}
+	
+		node.next= start;
+		start= node;
+	}
+	
+	public void insertAfterNode(Node node, int key){
+		if(start==null){
+			return;	
+		}else{
+			Node n =  start;
+			while(n.next!=null){
+				if(n.data==key){
+					node.next=n.next;
+					n.next=node;
+					break;
+				}
+				n= n.next;
+			}
+			
+			
+		}
+		
+		printList();
+		
+	}
+	
+	public void deleteNode(int key){
+		if(start==null){
+			return;
+		}
+		Node n = start;
+		Node prev = start;
+		while(n!=null){
+			if(n.data==key){
+				prev.next=n.next;
 				break;
 			}
-
+			prev = n;
+			n= n.next;
 		}
 		printList();
-
 	}
-
-	private void insertAtBegining(Node node) {
-
-		node.next = head;
-		head = node;
-		printList();
-
-	}
-
-	private void insertAtEnd(Node node) {
-		Node n = head;
-
-		while (n.next != null) {
-			n = n.next;
+	
+	public void deleteAtN(int position){
+		if(start==null){
+			return;
 		}
-		// n is last
-		n.next = node;
+		int ctr=0;
+		Node n = start;
+		Node prev=start;
+		while(n!=null){
+			
+			if(ctr== position){
+				prev.next=n.next;
+				break;
+			}
+			ctr++;
+			prev= n;
+			n= n.next;
+			
+		}
 		printList();
-
 	}
-
-	private void printList() {
-		// TODO Auto-generated method stub
-		Node node = head;
-
-		System.out.print(node.data + " ");
-		while (node.next != null) {
-
-			node = node.next;
-			System.out.print(node.data + " ");
+	
+	public void findLoop(){
+		if(start==null){
+			return;
+		}
+		HashSet<Node> hs = new HashSet<Node>();
+		Node n = start;
+		while(n!=null){
+			if(hs.contains(n)){
+				System.out.println("loop at "+n.data);
+				break;
+			}
+			hs.add(n);
+			n=n.next;
+		}
+		
+	}
+	
+	public void printList(){
+		if(start==null){
+			return;
 		}
 		System.out.println();
-
+		Node n =  start;
+		while(n!=null){
+			System.out.print(+n.data+ " ");
+			n= n.next;
+		}
 	}
-
+	
 }
