@@ -1,6 +1,6 @@
 package com.problem.solving;
 
-import com.problem.solving.ds.list.LinkedListImp;
+import com.problem.solving.ds.tree.BinarySearchTreeImp;
 
 
 
@@ -9,7 +9,7 @@ public class ProblemSolver {
 
 	public static void main(String[] args) {
 		// StackLL();
-		new LinkedListImp().execute();
+		new BinarySearchTreeImp().execute();
 	}
 	
 

@@ -32,16 +32,33 @@ public class LinkedListImp extends BaseProblem {
 		ll.deleteNode(2);
 		ll.deleteAtN(3);*/
 		
-		createLoop();
+//		createLoop();
+		
+		checkIfLinkedListsIntersect();
 		
 		
 	}
-	//search
-	//delete at key
-	//delete at given position
-	//find length of linked list
-	//get Nth node
-	//detect loop in a linked list
+
+/*
+ * https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
+ */
+	private void checkIfLinkedListsIntersect() {
+		Node n3=  new Node(3);
+		ll.insertAtEnd(new Node(1));
+		ll.insertAtEnd(new Node(2));
+		ll.insertAtEnd(n3);
+		LinkedList otherLl= new LinkedList();
+		otherLl.insertAtEnd(new Node(4));
+		otherLl.insertAtEnd(n3);
+		otherLl.insertAtEnd(new Node(5));
+		otherLl.insertAtEnd(new Node(6));
+		ll.printList();
+		System.out.println("other list");
+		otherLl.printList();
+		ll.checkIfLinkedListsIntersect(otherLl);
+		
+	}
+
 
 	private void insertAfterN(Node node, int n) {
 		int ctr = 0;
