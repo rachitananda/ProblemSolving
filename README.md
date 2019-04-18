@@ -38,9 +38,9 @@ String
 - Uppercase
 
 Tree 
-- Binary Tree 
+- Binary Tree - get depth
 - Binary Tree Traversal: Inorder, Preorder,PostOrder, LevelOrder/BFS
-- Binary Search Tree
+- Binary Search Tree , insert, delete, search
 
 Matrix
 - Find Element

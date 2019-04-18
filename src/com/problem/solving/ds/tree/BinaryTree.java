@@ -105,4 +105,31 @@ public class BinaryTree {
 	}
 	
 	
+	public int getDepth(){
+		return getHeight(root);
+	}
+	
+	/**
+	 *O(n) 
+	 *https://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/
+	 * @param root
+	 * @return
+	 */
+	private int getHeight(Node root){
+		
+		if(root== null){
+			return 0;
+		}
+		int maxRhs=1,maxLhs=1;
+		if(root.right!=null)
+		maxRhs+=getHeight(root.right);
+		
+		if(root.left!=null)
+		maxLhs += getHeight(root.left);
+	
+		
+		return Math.max(maxRhs, maxLhs);
+	}
+	
+	
 }
