@@ -13,6 +13,7 @@ Array Problems
 Factorial
 - Factorial Limit
 
+
 List
 - Linked List
 - Circular linked list
@@ -32,16 +33,18 @@ Sorting
 - Insertion sort
 - Selection sort
 - Merge sort
+- Heap sort
 
 String
 - Merge String Alternate
 - Remove Vowel
 - Uppercase
 
-Tree 
+Tree
 - Binary Tree - get depth
 - Binary Tree Traversal: Inorder, Preorder,PostOrder, LevelOrder/BFS
 - Binary Search Tree , insert, delete, search
+- Binary Heap - MinHeap, MaxHeap
 
 Matrix
 - Find Element

@@ -7,7 +7,9 @@ import com.problem.solving.Utils;
  * https://www.geeksforgeeks.org/merge-sort/
  * 
  * @author rachita
- * O(nlogn)
+ * Divide n conquer
+ * Auxiliary Space: O(n)
+ * Time Complexity :O(nlogn)
  */
 public class MergeSort extends BaseProblem {
 
@@ -46,7 +48,7 @@ public class MergeSort extends BaseProblem {
 		int n1, n2;
 
 		n1 = m - l + 1;
-		// n2= r-m-1+1 one gets cancelled
+		// n2= r-(m-1)+1 one gets cancelled
 		n2 = r - m;
 		int L[] = new int[n1];
 		int R[] = new int[n2];
@@ -85,8 +87,6 @@ public class MergeSort extends BaseProblem {
 			j++;
 			k++;
 		}
-
-		// return arr;
 
 	}
 }

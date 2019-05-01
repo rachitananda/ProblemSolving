@@ -6,6 +6,8 @@ import com.problem.solving.Utils;
  * 
  * @author rachita
  *Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
+ * Time Complexity: O(n*2)
+ * Auxiliary Space: O(1)
  */
 public class InsertionSort extends BaseProblem {
 	int[] arr = new int[] { 8, 7, 11, 1, 0, 9,38,22 };

@@ -1,15 +1,13 @@
 package com.problem.solving;
 
-import com.problem.solving.sorting.MergeSort;
-
-
+import com.problem.solving.sorting.HeapSort;
 
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
 		// StackLL();
-		new MergeSort().execute();
+		new HeapSort().execute();
 	}
 	
 

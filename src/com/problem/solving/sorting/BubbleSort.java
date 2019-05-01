@@ -5,10 +5,12 @@ import com.problem.solving.Utils;
 
 /**
  * 
- * @author rachita Time complexity - O(n2) worst case Space complexity - O(1) -
+ * @author rachita
+ * 			Time complexity - O(n2) worst case Space complexity - O(1) -
  *         does not take extra space
  *         Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping
  *          the adjacent elements if they are in wrong order.
+ *          https://www.geeksforgeeks.org/bubble-sort/
  */
 public class BubbleSort extends BaseProblem {
 
