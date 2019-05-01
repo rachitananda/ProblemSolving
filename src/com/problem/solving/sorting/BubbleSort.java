@@ -7,6 +7,8 @@ import com.problem.solving.Utils;
  * 
  * @author rachita Time complexity - O(n2) worst case Space complexity - O(1) -
  *         does not take extra space
+ *         Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping
+ *          the adjacent elements if they are in wrong order.
  */
 public class BubbleSort extends BaseProblem {
 
@@ -19,30 +21,27 @@ public class BubbleSort extends BaseProblem {
 		sortrecursive(arr, arr.length);
 
 	}
-
-	private void sort() {
+	
+	private void bubbleSort() {
 		int n = arr.length;
-		for (int i = 0; i <= n - 1; i++) {
-			for (int j = 0; j <= n - 2 - i; j++) {
-				if (arr[j + 1] < arr[j]) {
+		for (int i = 0; i < n - 1; i++) {
+			for (int j = 0; j < n - i-1; j++) {
+				if(arr[j+1]<arr[j]){
 					int temp = arr[j];
-					arr[j] = arr[j + 1];
-					arr[j + 1] = temp;
-
+					arr[j]= arr[j+1];
+					arr[j+1]= temp;
+					Utils.printArray(arr);
 				}
-				Utils.printArray(arr);
 			}
+			System.out.println("after i = "+i);
+			Utils.printArray(arr);
 		}
-		System.out.println("output");
-		Utils.printArray(arr);
-
 	}
 
 	private void sortrecursive(int[] arr, int n) {
 		if (n == 1)
 			return;
 		for (int j = 0; j <= n - 2; j++) {
-			// for (int j = 0; j <= n - 1 - i; j++) {
 			if (arr[j + 1] < arr[j]) {
 				int temp = arr[j];
 				arr[j] = arr[j + 1];
@@ -50,7 +49,6 @@ public class BubbleSort extends BaseProblem {
 
 			}
 			Utils.printArray(arr);
-			// }
 			sortrecursive(arr, n - 1);
 		}
 		System.out.println("output");

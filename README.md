@@ -31,6 +31,7 @@ Sorting
 - Bubble sort
 - Insertion sort
 - Selection sort
+- Merge sort
 
 String
 - Merge String Alternate

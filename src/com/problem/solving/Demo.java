@@ -1,105 +1,70 @@
 package com.problem.solving;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
-
-
-
 public class Demo {
-	
-	
 
+	//static int[] arr = { 64, 25, 12, 22, 11 };
+		static	int[] arr = new int[] { 8, 7, 11, 1, 0, 9,38,22 };
 	public static void main(String[] args) {
-	
-	BinaryTree tree = new BinaryTree();
-	tree.root= new Node(1);
-	tree.root.rhs=new Node(3);
-	Node n2 = new Node(2);
-	n2.rhs= new Node(5);
-	n2.lhs= new Node(4);
-	tree.root.lhs=n2;
-	
-	System.out.println("inorder");
-	tree.inorderTraversal(tree.root);
-	System.out.println("\npreorder");
-	tree.preOrderTraversal(tree.root);
-	System.out.println("\npostorder");
-	tree.postOrderTraversal(tree.root);
-	System.out.println("\nBFS- level order");
-	tree.levelOrderTraversal();
+
+		insertionSort();
+
 	}
-
 	
-	
-	
-	
-	static class BinaryTree{
-		
-		Node root;
-		
-		
-		void inorderTraversal(Node node){
-			if(node == null){
-				return;
-			}
-			inorderTraversal(node.lhs);
-			System.out.print(node.data+" ");
-			inorderTraversal(node.rhs);
-			
-		}
-		
-		void preOrderTraversal(Node node){
-			if(node == null){
-				return;
-			}
-			System.out.print(node.data+" ");
-			inorderTraversal(node.lhs);
-			inorderTraversal(node.rhs);
-			
-		}
-		void postOrderTraversal(Node node){
-			if(node == null){
-				return;
-			}
-
-			postOrderTraversal(node.lhs);
-			postOrderTraversal(node.rhs);
-			System.out.print(node.data+" ");
-			
-		}
-		
-	
-		void levelOrderTraversal(){
-			Queue<Node> queue = new LinkedList<Node>();
-			queue.add(root);
-			
-			while(!queue.isEmpty()){
-				
-				Node node = queue.poll();
-				System.out.print(" "+node.data+" ");
-				if(node.lhs!=null){
-					queue.add(node.lhs);
-				}
-				if(node.rhs!=null){
-					queue.add(node.rhs);
+	static void insertionSort(){
+		int n = arr.length;
+		for (int i = 1;i<n;i++){
+			System.out.println(" i = "+i);
+			int pos =i;
+			for (int j=i-1;j>=0;j--){
+				if(arr[pos] < arr[j]){
+					//swap
+					
+					int temp = arr[j];
+					arr[j]= arr[pos];
+					arr[pos]=temp;
+					pos=j;
 				}
 				
+				Utils.printArray(arr);
 			}
-			
-			
-		}
-		
-	}
-	
-	static class Node{
-		int data;
-		Node lhs,rhs;
-		Node(int key){
-			data=key;
 		}
 	}
-	
+
+	static void bubbleSort() {
+		int n = arr.length;
+		for (int i = 0; i < n - 1; i++) {
+			for (int j = 0; j < n - i-1; j++) {
+				if(arr[j+1]<arr[j]){
+					int temp = arr[j];
+					arr[j]= arr[j+1];
+					arr[j+1]= temp;
+					Utils.printArray(arr);
+				}
+			}
+			System.out.println("after i = "+i);
+			Utils.printArray(arr);
+		}
+	}
+
+	static void selectionSort() {
+		int n = arr.length;
+		for (int i = 0; i < n - 2; i++) {
+			int min = arr[i];
+			int pos = i;
+			for (int j = i + 1; j < n; j++) {
+				if (arr[j] < min) {
+					min = arr[j];
+					pos = j;
+				}
+			}
+			// swap
+			int temp = arr[i];
+			arr[i] = min;
+			arr[pos] = temp;
+
+			Utils.printArray(arr);
+
+		}
+	}
+
 }
-
-

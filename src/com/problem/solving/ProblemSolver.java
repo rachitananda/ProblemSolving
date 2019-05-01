@@ -1,6 +1,6 @@
 package com.problem.solving;
 
-import com.problem.solving.ds.tree.BinaryTreeProb;
+import com.problem.solving.sorting.MergeSort;
 
 
 
@@ -9,7 +9,7 @@ public class ProblemSolver {
 
 	public static void main(String[] args) {
 		// StackLL();
-		new BinaryTreeProb().execute();
+		new MergeSort().execute();
 	}
 	
 
