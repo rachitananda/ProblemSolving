@@ -11,7 +11,7 @@ import java.util.Queue;
  For example, the file system on a computer: 
  2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).
 3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).
-4. Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on number of nodes as nodes are linked using pointers.
+4. Like Linked Lists and unlike Arrays, Trees donï¿½t have an upper limit on number of nodes as nodes are linked using pointers.
 Main applications of trees include:
 1. Manipulate hierarchical data.
 2. Make information easy to search (see tree traversal).
@@ -40,6 +40,7 @@ public class BinaryTree {
 	 * https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
 	 * O(n)
 	 * L Root R
+	 * DFS
 	 */
 	public void inOrderTraversal(Node root) {
 
@@ -54,6 +55,7 @@ public class BinaryTree {
 	/**
 	 * O(n)
 	 * Root L R
+	 * DFS
 	 */
 	public void preOrderTraversal(Node root) {
 
@@ -69,6 +71,7 @@ public class BinaryTree {
 	/**
 	 * O(n)
 	 * L R Root
+	 * DFS
 	 */
 	public void postOrderTraversal(Node root) {
 
@@ -84,6 +87,7 @@ public class BinaryTree {
 	/*
 	 * https://www.geeksforgeeks.org/level-order-tree-traversal/
       O(n) complexity
+      BFS
      */
 	public void levelOrderTraversal() {
 

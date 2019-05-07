@@ -2,7 +2,7 @@ package com.problem.solving.ds.stack;
 
 /**
  * Stack with Arrays Pros: Easy to implement. Memory is saved as pointers are
- * not involved. Cons: It is not dynamic. It doesn’t grow and shrink depending
+ * not involved. Cons: It is not dynamic. It doesnï¿½t grow and shrink depending
  * on needs at runtime.
  * https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
  * push(), pop(), isEmpty() and peek() all take O(1) time.
@@ -13,7 +13,7 @@ public class Stack {
 
 	static int top = -1;
 	final static int MAX = 10;
-	static int arr[] = new int[10];
+	static int arr[] = new int[MAX];
 
 	public static void main(String[] args) {
 

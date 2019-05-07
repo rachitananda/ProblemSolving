@@ -1,5 +1,9 @@
 package com.problem.solving.ds.queue;
 
+/**
+ * @author rachita
+ * https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/
+ */
 public class CircularQueue {
 	int front, rear, size, capacity;
 	int arr[];

@@ -1,13 +1,13 @@
 package com.problem.solving;
 
-import com.problem.solving.sorting.HeapSort;
+import com.problem.solving.sorting.QuickSort;
 
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
-		// StackLL();
-		new HeapSort().execute();
+
+		new QuickSort().execute();
 	}
 	
 

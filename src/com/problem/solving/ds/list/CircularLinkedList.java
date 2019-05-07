@@ -1,9 +1,12 @@
 package com.problem.solving.ds.list;
 
-import java.util.Scanner;
-
 import com.problem.solving.BaseProblem;
 
+import java.util.Scanner;
+
+/**
+ * https://www.geeksforgeeks.org/circular-linked-list/
+ */
 public class CircularLinkedList extends BaseProblem {
 	Node head = null;
 

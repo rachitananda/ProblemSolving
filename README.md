@@ -34,6 +34,7 @@ Sorting
 - Selection sort
 - Merge sort
 - Heap sort
+- Quick sort
 
 String
 - Merge String Alternate
