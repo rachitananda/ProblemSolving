@@ -40,12 +40,14 @@ String
 - Merge String Alternate
 - Remove Vowel
 - Uppercase
+- Reverse words in String
 
 Tree
 - Binary Tree - get depth
 - Binary Tree Traversal: Inorder, Preorder,PostOrder, LevelOrder/BFS
 - Binary Search Tree , insert, delete, search
 - Binary Heap - MinHeap, MaxHeap
+- Lowest Common Ancestor
 
 Matrix
 - Find Element
@@ -56,6 +58,7 @@ NumberSystem
 
 Coordinate
 - Overlapping Rectangle
+- Reach destination in 2 steps
 
 Stack
 - Stack with Array

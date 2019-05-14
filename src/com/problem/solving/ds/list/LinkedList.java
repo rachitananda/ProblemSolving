@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class LinkedList {
 	Node start;
 
-	// public LinkedList(Node start){
+	// public LinkedList(NodeWithParentPtr start){
 	// this.start= start;
 	// this.start=null;
 	// }
