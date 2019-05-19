@@ -1,13 +1,13 @@
 package com.problem.solving;
 
-import com.problem.solving.sorting.QuickSort;
+import com.problem.solving.ds.tree.HeapImp;
 
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
 
-		new QuickSort().execute();
+		new HeapImp().execute();
 	}
 	
 

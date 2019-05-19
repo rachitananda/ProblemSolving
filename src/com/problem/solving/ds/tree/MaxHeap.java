@@ -4,7 +4,7 @@ public class MaxHeap extends BinaryHeap {
 
     //can be done recursively also
     @Override
-  public  void heapifyDown() {
+  public  void heapifyDownAfterExtractRoor() {
 
         //start from root
         int index= 0;
@@ -29,14 +29,14 @@ public class MaxHeap extends BinaryHeap {
 
 
     @Override
-    public void heapifyUp() {
+    public void heapifyUpAfterAddInHeap() {
 
         //last item
         int index= size-1;
         while(hasParent(index) && parent(index)< items[index]){
             //max heap property not satisfied , parent < item
             swap(getParentIndex(index),index);
-            index= getParentIndex(index);//heapifyUp from this parent item
+            index= getParentIndex(index);//heapifyUpAfterAddInHeap from this parent item
 
         }
 

@@ -9,6 +9,7 @@ Array Problems
 - Rotate Array
 - Largest Sub Array Sum
 - Sort0s1s2s
+- K’th Smallest Element in Unsorted Array
 
 Factorial
 - Factorial Limit

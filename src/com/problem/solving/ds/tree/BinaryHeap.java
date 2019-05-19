@@ -36,6 +36,7 @@ abstract public class BinaryHeap {
 
     public BinaryHeap(){
         capacity=10;
+        capacity=10;
         items = new int[capacity];
     }
 
@@ -45,7 +46,8 @@ abstract public class BinaryHeap {
     }
 
     public int getParentIndex(int index) {
-        return (index - 1) / 2;
+        //ceil to fix round down of 0.5 to 0 when index is 2
+        return (int) Math.ceil((index - 1) / 2.0);
     }
 
     public int getLeftChildIndex(int index) {
@@ -95,7 +97,8 @@ abstract public class BinaryHeap {
      **/
     public void ensureCapacity() {
         if (size == capacity) {
-            items = Arrays.copyOf(items, capacity * 2);
+            capacity=capacity * 2;
+            items = Arrays.copyOf(items, capacity );
         }
     }
 
@@ -126,16 +129,17 @@ abstract public class BinaryHeap {
 
     /**
      * Extracts/removes root element from Heap.
+     * //Extracr MIN/MAX/ROOt
      *  O(Logn)
      **/
-    public int poll() {
+    public int pollExtractRoot() {
         if (isEmpty())
             return -1;
 
         int item = items[0];
         items[0] = items[size - 1];
         size--;
-        heapifyDown();
+        heapifyDownAfterExtractRoor();
         return item;
     }
 
@@ -150,18 +154,19 @@ abstract public class BinaryHeap {
         items[size] = item;
         size++;
         // Correct order property
-        heapifyUp();
+        heapifyUpAfterAddInHeap();
     }
 
     /**
      * Swap values down the Heap.
+     * 0(logn)
      **/
-    abstract public  void heapifyDown();
+    abstract public  void heapifyDownAfterExtractRoor();
 
     /**
      * Swap values up the Heap.
      **/
-    abstract public void heapifyUp();
+    abstract public void heapifyUpAfterAddInHeap();
 
     public  void print(){
         System.out.println("HEAP created");

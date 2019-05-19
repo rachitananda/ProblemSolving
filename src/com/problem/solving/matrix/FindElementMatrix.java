@@ -11,6 +11,11 @@ import java.util.Scanner;
  */
 
 public class FindElementMatrix extends BaseProblem {
+    static int i, j;
+    int mat[][] = {{10, 20, 30, 40},
+            {15, 25, 35, 45},
+            {27, 29, 37, 48},
+            {32, 33, 39, 50}};
 
     @Override
     public void execute() {
@@ -31,9 +36,14 @@ public class FindElementMatrix extends BaseProblem {
         }
         System.out.println("Enter element to find ");
         int item = in.nextInt();
-        findElement1(arr, r, c, item);
 
         in.close();
+//        findElement1(arr, r, c, item);
+        //recursive
+        i = 0;
+        j = c - 1;
+        System.out.println("found :" + findElementR(arr, r, c, item));
+
 
     }
 
@@ -53,6 +63,7 @@ public class FindElementMatrix extends BaseProblem {
 
     }
 
+
     /*
      * O(n+m)
      */
@@ -70,6 +81,27 @@ public class FindElementMatrix extends BaseProblem {
             }
 
         }
+    }
+
+    private boolean findElementR(int[][] arr, int r, int c, int item) {
+
+
+        if (i == r - 1 && j == 0) {
+            //not found
+            return false;
+        }
+        if (item < arr[i][j] && j > 0) {
+            j--;
+        } else if (item > arr[i][j] && i < r - 1) { //>
+            i++;
+        } else if (item == arr[i][j]) {
+            return true;
+        } else {
+            return false;
+        }
+        return findElementR(arr, r, c, item);
 
     }
+
+
 }

@@ -42,7 +42,7 @@ public class HeapSort  extends BaseProblem{
         {
             maxHeap.swap(0,i);
             maxHeap.size--;
-            maxHeap.heapifyDown();
+            maxHeap.heapifyDownAfterExtractRoor();
 
         }
         System.out.println("\nsorted array FINAL");

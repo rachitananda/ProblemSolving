@@ -8,8 +8,8 @@ public class HeapImp extends BaseProblem {
     @Override
     public void execute() {
 
-//        minHeapExample();
-        maxHeapExample();
+        minHeapExample();
+//        maxHeapExample();
     }
 
     static void maxHeapExample() {
@@ -24,7 +24,7 @@ public class HeapImp extends BaseProblem {
         System.out.println("max heap created");
         maxHeap.print();
         in.close();
-        maxHeap.poll();
+        int item = maxHeap.pollExtractRoot();
         System.out.println("\nPOLL");
         maxHeap.print();
 
@@ -46,8 +46,8 @@ public class HeapImp extends BaseProblem {
 //        minHeap.add(in.nextInt());
         in.close();
 //        minHeap.print();
-        minHeap.poll();
-        System.out.println("\nPOLL");
+        int min = minHeap.pollExtractRoot();
+        System.out.println("\nPOLL" + min);
         minHeap.print();
     }
 }
