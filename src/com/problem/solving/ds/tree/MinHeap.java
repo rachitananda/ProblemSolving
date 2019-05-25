@@ -17,7 +17,6 @@ public class MinHeap extends BinaryHeap  {
 
     public void minHeapify(int index)
     {
-
         if(hasLeftChild(index)) {
             //find the smallest/min of both childs
             int smallestChildIndex = getLeftChildIndex(index);

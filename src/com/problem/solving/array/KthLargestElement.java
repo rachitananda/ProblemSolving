@@ -9,8 +9,10 @@ import java.util.Arrays;
  * Solutions:
  * 1.Sort -  O(nlogn) with heap/merge sort (best sorting complexity)
  * 2. Min Heap - extractMax() 0(logn) - best scenario-
+ * Build Heap - O(n) time
  * simple optomization is to create a Min Heap of the given n elements and call extractMin() k times.
- * Time complexity of this solution is O(n + kLogn).Time complexity of this solution is O(n + kLogn).
+ * Time complexity of this solution is O(n + kLogn). buildheap()+ k times extractMin()
+ * This is better than best sorting /mergesort/quicksort 0(nlogn)
  */
 public class KthLargestElement {
 

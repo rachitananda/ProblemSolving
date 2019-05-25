@@ -9,7 +9,7 @@ Array Problems
 - Rotate Array
 - Largest Sub Array Sum
 - Sort0s1s2s
-- K’th Smallest Element in Unsorted Array
+- K’th Largest Element in Unsorted Array
 
 Factorial
 - Factorial Limit
@@ -53,6 +53,7 @@ Tree
 Matrix
 - Find Element
 - sum of sub matrices (todo)
+- K’th Smallest Element in  2D sorted Array Matrix
 
 NumberSystem
 - Binary/Decimal coversion
