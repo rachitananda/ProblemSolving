@@ -7,7 +7,7 @@ public class MinHeap extends BinaryHeap  {
      * called after pollExtractRoot(delete root)
      */
     @Override
-   public void heapifyDownAfterExtractRoor() {
+   public void heapifyDownAfterExtractRoot() {
 
         //start from root
         int index= 0;

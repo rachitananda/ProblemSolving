@@ -9,7 +9,7 @@ import com.problem.solving.BaseProblem;
 
 import java.util.Scanner;
 
-public class MisingNoInArray extends BaseProblem{
+public class MissingNoInArray extends BaseProblem{
 	
 	int testcaseCount ;
 

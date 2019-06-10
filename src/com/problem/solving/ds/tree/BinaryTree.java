@@ -130,8 +130,8 @@ public class BinaryTree {
 		
 		if(root.left!=null)
 		maxLhs += getHeight(root.left);
-	
-		
+
+		System.out.println("height"+Math.max(maxRhs, maxLhs));
 		return Math.max(maxRhs, maxLhs);
 	}
 	

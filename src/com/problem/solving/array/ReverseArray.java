@@ -4,13 +4,25 @@ import com.problem.solving.BaseProblem;
 import com.problem.solving.Utils;
 
 public class ReverseArray extends BaseProblem {
-	int[] arr = { 1, 2, 3 ,4};
+	int[] arr = { 1, 2, 3 ,4,5};
 
 	@Override
 	public void execute() {
 
-		reverse2();
+		reverse3();
 	}
+
+	private void reverse3(){
+		int j = arr.length-1;
+		int i = 0;
+		while(i<j){
+			swap(i,j);
+			i++;
+			j--;
+		}
+		Utils.printArray(arr);
+	}
+
 
 	private void reverse() {
 		// TODO Auto-generated method stub

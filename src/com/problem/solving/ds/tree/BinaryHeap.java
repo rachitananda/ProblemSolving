@@ -36,7 +36,6 @@ abstract public class BinaryHeap {
 
     public BinaryHeap(){
         capacity=10;
-        capacity=10;
         items = new int[capacity];
     }
 
@@ -139,7 +138,7 @@ abstract public class BinaryHeap {
         int item = items[0];
         items[0] = items[size - 1];
         size--;
-        heapifyDownAfterExtractRoor();
+        heapifyDownAfterExtractRoot();
         return item;
     }
 
@@ -161,7 +160,7 @@ abstract public class BinaryHeap {
      * Swap values down the Heap.
      * 0(logn)
      **/
-    abstract public  void heapifyDownAfterExtractRoor();
+    abstract public  void heapifyDownAfterExtractRoot();
 
     /**
      * Swap values up the Heap.

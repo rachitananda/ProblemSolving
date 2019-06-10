@@ -1,5 +1,4 @@
-# ProblemSolvingProblems
-Java ProblemSolvingProblems 
+# Problem Solving DSA JAVA
 
 Array Problems
 - Find Triplets
@@ -25,6 +24,7 @@ Queue
 - Queue with array
 - Blocking Queue
 - Circular Queue
+- LRUCache TODO
 
 Search
 - Binary Search

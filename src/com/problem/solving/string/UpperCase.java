@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * https://practice.geeksforgeeks.org/problems/upper-case-conversion/0 Given a
  * string , write a program to title case every first letter of words in string.
- * 
+ * CAMEL CASE
  * @author rachita
  *
  */

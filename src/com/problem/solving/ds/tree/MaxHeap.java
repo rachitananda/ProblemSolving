@@ -4,7 +4,7 @@ public class MaxHeap extends BinaryHeap {
 
     //can be done recursively also
     @Override
-  public  void heapifyDownAfterExtractRoor() {
+  public  void heapifyDownAfterExtractRoot() {
 
         //start from root
         int index= 0;
