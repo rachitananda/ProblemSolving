@@ -17,14 +17,15 @@ Factorial
 List
 - Linked List
 - Circular linked list
+- Doubly Linked List
 - Blocking Queue with Intrinsic locking
 - MyArrayList , arraylist implementation
+- LRU Cache
 
 Queue
 - Queue with array
 - Blocking Queue
 - Circular Queue
-- LRUCache TODO
 
 Search
 - Binary Search

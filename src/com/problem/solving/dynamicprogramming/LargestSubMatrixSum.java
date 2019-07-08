@@ -13,7 +13,7 @@ public class LargestSubMatrixSum {
     };
     static int row = 4, column = 5;
 //TODO
-
+  //  https://www.geeksforgeeks.org/submatrix-sum-queries/
     public static void main(String[] args) {
 
         System.out.println("MAx sum " + maxSumMatrixBruteForce());
