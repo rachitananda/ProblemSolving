@@ -1,4 +1,4 @@
-# Problem Solving DSA JAVA
+# Data Structure and Algorithm -Problem Solving  JAVA
 
 Array Problems
 - Find Triplets
@@ -49,11 +49,14 @@ Tree
 - Binary Search Tree , insert, delete, search
 - Binary Heap - MinHeap, MaxHeap
 - Lowest Common Ancestor
+- Boundary Traversal Tree
+- Foldable Binary Tree
 
 Matrix
 - Find Element
 - sum of sub matrices (todo)
 - K’th Smallest Element in  2D sorted Array Matrix
+- Boolean Matrix
 
 NumberSystem
 - Binary/Decimal coversion
@@ -65,6 +68,18 @@ Coordinate
 Stack
 - Stack with Array
 - Stack with Linked list
+
+Dynamic Programming
+- LargestSubArraySum
+- LongestPathMatrix
+- MinInsertionsToFormPalindrome
+- SubsequenceAdjacentElementDiff
+
+BackTracking
+- RatinMaze
+- PathsinMaze
+
+
 
 
 
