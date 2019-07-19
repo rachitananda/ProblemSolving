@@ -34,7 +34,7 @@ public class MergeSortedArray {
         mergeSortedArray1(array1, array2);
 
     }
-
+    //TODO not working
 
     private static void mergeSortedArray1(int[] a, int[] b) {
 

@@ -7,8 +7,8 @@ package com.problem.solving.ds.tree;
  * become n and the time complexity of search and insert operation may become
  * O(n).
  * https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
- * BST PROPERTIES - left<root<right - no duplicates -A new key is always
- * inserted at leaf. We start searching a key from root till we hit a leaf node.
+ * BST PROPERTIES - left<root<right - NO DUPLICATES NODES-
+ * A NEW NODE ALWAYS ADDED AT  LEAF. We start searching a key from root till we hit a leaf node.
  * Once a leaf node is found, the new node is added as a child of the leaf node.
  */
 public class BinarySearchTree extends BinaryTree {

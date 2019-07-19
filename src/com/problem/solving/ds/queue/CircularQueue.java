@@ -41,7 +41,7 @@ public class CircularQueue {
 			}
 
 			// front++;
-			frontInccrement();
+			frontIncrement();
 			size--;
 		}
 		System.out.println("\ndequeue");
@@ -86,7 +86,7 @@ public class CircularQueue {
 		return rear;
 	}
 
-	int frontInccrement() {
+	int frontIncrement() {
 		if (front == capacity - 1) {
 			front = 0;
 		} else {

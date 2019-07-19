@@ -2,12 +2,12 @@ package com.problem.solving.ds.tree;
 
 public class Node {
 
-	 int data;
-	 Node right, left;
+    public int data;
+    public Node right, left;
 
-	public Node(int data) {
-		this.data = data;
-		right = left = null;
-	}
+    public Node(int data) {
+        this.data = data;
+        right = left = null;
+    }
 
 }

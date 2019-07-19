@@ -1,13 +1,13 @@
 package com.problem.solving;
 
-import com.problem.solving.ds.tree.FoldableBinaryTree;
+import com.problem.solving.ds.queue.BlockingQueue;
 
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
 
-		new FoldableBinaryTree().execute();
+		new BlockingQueue().execute();
 	}
 	
 

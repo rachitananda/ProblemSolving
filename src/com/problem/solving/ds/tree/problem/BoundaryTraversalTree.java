@@ -1,6 +1,8 @@
-package com.problem.solving.ds.tree;
+package com.problem.solving.ds.tree.problem;
 
 import com.problem.solving.BaseProblem;
+import com.problem.solving.ds.tree.BinaryTree;
+import com.problem.solving.ds.tree.Node;
 
 /*
 https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/

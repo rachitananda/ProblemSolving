@@ -1,8 +1,8 @@
-package com.problem.solving.factorial;
-
-import java.util.Scanner;
+package com.problem.solving.array;
 
 import com.problem.solving.BaseProblem;
+
+import java.util.Scanner;
 
 /**
  * https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-

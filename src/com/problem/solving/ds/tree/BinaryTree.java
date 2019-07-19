@@ -25,7 +25,7 @@ Since each element in a binary tree can have only 2 children, we typically name 
  */
 public class BinaryTree {
 	
-	Node root= new Node(1);
+	public Node root= new Node(1);
 
 	
 	public BinaryTree(){
@@ -119,7 +119,7 @@ public class BinaryTree {
 	 * @param root
 	 * @return
 	 */
-	private int getHeight(Node root){
+	public int getHeight(Node root){
 		
 		if(root== null){
 			return 0;
@@ -131,9 +131,11 @@ public class BinaryTree {
 		if(root.left!=null)
 		maxLhs += getHeight(root.left);
 
-		System.out.println("height"+Math.max(maxRhs, maxLhs));
+		//System.out.println("height"+Math.max(maxRhs, maxLhs));
 		return Math.max(maxRhs, maxLhs);
 	}
-	
+
+
+
 	
 }

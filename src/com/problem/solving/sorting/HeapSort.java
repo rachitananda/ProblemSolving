@@ -1,7 +1,7 @@
 package com.problem.solving.sorting;
 
 import com.problem.solving.BaseProblem;
-import com.problem.solving.ds.tree.MaxHeap;
+import com.problem.solving.ds.tree.heap.MaxHeap;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.problem.solving.ds.tree;
+package com.problem.solving.ds.tree.heap;
 
 public class MinHeap extends BinaryHeap  {
 

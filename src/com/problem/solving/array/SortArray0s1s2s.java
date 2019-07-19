@@ -1,8 +1,8 @@
 package com.problem.solving.array;
 
-import java.util.Scanner;
-
 import com.problem.solving.BaseProblem;
+
+import java.util.Scanner;
 /**
  * https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
  * https://www.geeksforgeeks.org/how-to-get-rid-of-java-tle-problem/
@@ -49,11 +49,11 @@ public class SortArray0s1s2s extends BaseProblem {
 		    int hi=arr.length-1;
 		    int mid=0;
 		    int temp;
-		    while(mid<hi){
+		    while(mid<=hi){
 		        switch(arr[mid]){
 		            case 0: temp= arr[lo];
 		                 arr[lo] = arr[mid];
-		                 arr[mid]= lo; 
+		                 arr[mid]= temp;
 		                 lo++;
 		                break;
 		            case 1:

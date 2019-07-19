@@ -75,7 +75,7 @@ public class CountSetBits {
 	// count+=n & 1;// 110 &
 	// // 001
 	// //= 000
-	// n= n>>1;// eliminate the counted bit by right shirt 110>>1 = 11 or 011
+	// n= n>>1;// eliminate the counted bit by right shift 110>>1 = 11 or 011
 	//
 	// count= countSetBitsRecursive(n);
 	// }

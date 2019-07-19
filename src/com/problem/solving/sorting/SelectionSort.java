@@ -29,7 +29,7 @@ public class SelectionSort extends BaseProblem {
 
 	private void selectionSort() {
 		int n = arr.length;
-		for (int i = 0; i < n - 2; i++) {
+		for (int i = 0; i <n - 1; i++) {
 			int min = arr[i];
 			int pos = i;
 			for (int j = i + 1; j < n; j++) {

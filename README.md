@@ -52,6 +52,9 @@ Tree
 - Lowest Common Ancestor
 - Boundary Traversal Tree
 - Foldable Binary Tree
+- Diameter of Tree
+- Diameter of Tree DFS TODO
+- Check if BST
 
 Matrix
 - Find Element
