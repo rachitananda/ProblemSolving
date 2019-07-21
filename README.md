@@ -78,10 +78,16 @@ Dynamic Programming
 - LongestPathMatrix
 - MinInsertionsToFormPalindrome
 - SubsequenceAdjacentElementDiff
+- 0-1 Knapsack
 
 BackTracking
 - RatinMaze
 - PathsinMaze
+
+Graph
+- BFS
+- DFS
+- TODO BFS/DFS for unconnected nodes
 
 
 
