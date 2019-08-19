@@ -10,9 +10,9 @@ import java.util.HashMap;
  * Fast access: As we are designing cache, we should be able to fetch or update entries faster.O(1)
  * Evict least recently used entry: Cache should evict least recently used entry if capacity is reached
  * Solution
- * As we need to do lookup in O(1) time then HashMap is obvious choice but we need to take care of least recently used entry as well.
+ * As we need to do lookup in O(1) time then HASHMAP is obvious choice but we need to take care of least recently used entry as well.
  * We need to find a data structure which can remove/add in O(1) time if we already know the node. We can use a double linked list for this purpose because it provides removal/addition in O(1) time if already know about the node.
- * HashMap will make get operation in O(1) time and Doube linked list will make removal/addition in O(1) time.
+ * HashMap will make get operation in O(1) time and DOUBLY LINKED LIST will make removal/addition in O(1) time.
  * Insert at HEAD and DELETE FROM TAIL
  * GET entry (should be moved to head(most used on top))
  * PUT - if capacity reaches delete tail node(least recently used)

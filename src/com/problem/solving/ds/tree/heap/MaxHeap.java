@@ -8,9 +8,9 @@ public class MaxHeap extends BinaryHeap {
 
         //start from root
         int index= 0;
-        //will have right child if left child is there (heap follows complete tree property)
+
         while(hasLeftChild(index)){
-            //find the max of both childs
+            //find the max of both child's
             int largestChildIndex= getLeftChildIndex(index);
             if(hasRightChild(index) && rightChild(index)> leftChild(index)){
                 largestChildIndex =getRightChildIndex(index);

@@ -38,7 +38,6 @@ public class MinHeap extends BinaryHeap  {
 
        int index= 0;
        ///WORKS WELL- WITHOUT RECUSSION
-       //will have right child if left child is there (heap follows complete tree property)
         while(hasLeftChild(index)){
             //find the smallest/min of both childs
             int smallestChildIndex= getLeftChildIndex(index);

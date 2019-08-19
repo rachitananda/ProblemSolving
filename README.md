@@ -9,6 +9,7 @@ Array Problems
 - Largest Sub Array Sum
 - Sort0s1s2s
 - K’th Largest Element in Unsorted Array
+- Merge Sorted Array TODO
 
 Factorial
 - Factorial Limit
@@ -55,6 +56,11 @@ Tree
 - Diameter of Tree
 - Diameter of Tree DFS TODO
 - Check if BST
+- Vertical Traversal of tree
+- Top view Tree
+- Right & Left View tree
+- Segment Tree
+- Range Minium Query based on Segment Tree
 
 Matrix
 - Find Element
