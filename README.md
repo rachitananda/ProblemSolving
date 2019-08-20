@@ -84,6 +84,12 @@ Stack
 - Stack with Array
 - Stack with Linked list
 
+Map
+- Custom HashMap
+- Custom Concurrent HashMap
+- Custom Concurrent HashMap Using Locks
+- Custom Concurrent HashMap Using Synchronised Blocks
+
 Thread
 - Print odd even numbers
 
