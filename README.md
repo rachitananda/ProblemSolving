@@ -9,7 +9,9 @@ Array Problems
 - Largest Sub Array Sum
 - Sort0s1s2s
 - K’th Largest Element in Unsorted Array
-- Merge Sorted Array TODO
+- Sort by frequency
+- Merge Sorted Array TOD
+
 
 Factorial
 - Factorial Limit
@@ -44,6 +46,7 @@ String
 - Remove Vowel
 - Uppercase
 - Reverse words in String
+- Common word
 
 Tree
 - Binary Tree - get depth
@@ -59,8 +62,10 @@ Tree
 - Vertical Traversal of tree
 - Top view Tree
 - Right & Left View tree
+
+Advanced DS
 - Segment Tree
-- Range Minium Query based on Segment Tree
+- Range Minimum Query based on Segment Tree
 
 Matrix
 - Find Element
@@ -78,6 +83,9 @@ Coordinate
 Stack
 - Stack with Array
 - Stack with Linked list
+
+Thread
+- Print odd even numbers
 
 Dynamic Programming
 - LargestSubArraySum
