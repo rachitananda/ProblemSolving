@@ -4,7 +4,7 @@ package com.problem.solving.ds.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**https://www.geeksforgeeks.org/binary-tree-data-structure/
+/** https://www.geeksforgeeks.org/binary-tree-data-structure/
  * @author rachita
  *Why Trees?
 1. One reason to use trees might be because you want to store information that naturally forms a hierarchy.

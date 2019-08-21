@@ -1,4 +1,4 @@
-# Data Structure and Algorithm -Problem Solving  JAVA
+# Data Structure and Algorithm - Java Problem Solving
 
 Array Problems
 - Find Triplets
@@ -10,7 +10,8 @@ Array Problems
 - Sort0s1s2s
 - K’th Largest Element in Unsorted Array
 - Sort by frequency
-- Merge Sorted Array TOD
+- Merge Sorted Array TODo
+- First1inSorted0s1s
 
 
 Factorial
@@ -24,6 +25,7 @@ List
 - Blocking Queue with Intrinsic locking
 - MyArrayList , arraylist implementation
 - LRU Cache
+- Rotate Linked list by K
 
 Queue
 - Queue with array
@@ -62,6 +64,7 @@ Tree
 - Vertical Traversal of tree
 - Top view Tree
 - Right & Left View tree
+- Level Order Spiral Traversal
 
 Advanced DS
 - Segment Tree
@@ -72,6 +75,7 @@ Matrix
 - sum of sub matrices (todo)
 - K’th Smallest Element in  2D sorted Array Matrix
 - Boolean Matrix
+- Rotate matrix by 90
 
 NumberSystem
 - Binary/Decimal coversion
@@ -83,6 +87,7 @@ Coordinate
 Stack
 - Stack with Array
 - Stack with Linked list
+- Special Stack
 
 Map
 - Custom HashMap
