@@ -80,7 +80,7 @@ public class LongestPathMatrix extends BaseProblem {
         }
         //up
         if (j > 0 && (mat[i][j] + 1) == mat[i][j - 1]) {
-            return lookup[i][j] = 1 + getLongestPathFromCell(i, j + 1, lookup);
+            return lookup[i][j] = 1 + getLongestPathFromCell(i, j - 1, lookup);
         }
         //right
         if (i < n - 1 && (mat[i][j] + 1) == mat[i + 1][j]) {

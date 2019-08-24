@@ -6,7 +6,7 @@ import com.problem.solving.ds.tree.Node;
 /**
  * https://www.geeksforgeeks.org/print-nodes-in-top-view-of-binary-tree-set-2/
  */
-public class TopViewTree {
+public class TopBottomViewTree {
 
     TreeVerticalOrder verticalOrder = new TreeVerticalOrder();
 
@@ -14,10 +14,11 @@ public class TopViewTree {
 
     public static void main(String args[]) {
 
-        TopViewTree problem = new TopViewTree();
+        TopBottomViewTree problem = new TopBottomViewTree();
 
         problem.createTree();
         problem.verticalOrder.verticalLevelOrder(problem.tree.root);
+        problem.verticalOrder.bottomViewTree(problem.tree.root);
     }
 
     /*

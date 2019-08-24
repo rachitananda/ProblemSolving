@@ -3,7 +3,7 @@ package com.problem.solving.ds.tree.advanced;
 import com.problem.solving.Utils;
 
 /**
- * https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/
+ *c
  */
 public class RangeMinQuery {
 

@@ -10,6 +10,7 @@ package com.problem.solving.ds.tree;
  * BST PROPERTIES - left<root<right - NO DUPLICATES NODES-
  * A NEW NODE ALWAYS ADDED AT  LEAF. We start searching a key from root till we hit a leaf node.
  * Once a leaf node is found, the new node is added as a child of the leaf node.
+ * There must be NO DUPLICATES nodes.
  */
 public class BinarySearchTree extends BinaryTree {
 

@@ -25,23 +25,23 @@ import com.problem.solving.Utils;
 public class SegmentTree {
 
     static int arr[] = {1, 3, 5, 7, 9, 11};
-   static int n =arr.length;
+    static int n = arr.length;
 
 
     int st[];
 
     public static void main(String args[]) {
 
-        SegmentTree segmentTree = new SegmentTree(arr,n);
+        SegmentTree segmentTree = new SegmentTree(arr, n);
 
-       System.out.println("Sum 1:3 ="+segmentTree.getSum(1,3,n));
-// Update: set arr[1] = 10 and update corresponding segment
+        System.out.println("Sum 1:3 =" + segmentTree.getSum(1, 3, n));
+        // Update: set arr[1] = 10 and update corresponding segment
         // tree nodes
         segmentTree.updateValue(arr, n, 1, 10);
 
         // Find sum after the value is updated
         System.out.println("Updated sum of values in given range = " +
-                segmentTree.getSum( 1, 3,n));
+                segmentTree.getSum(1, 3, n));
 
     }
 
@@ -123,21 +123,18 @@ public class SegmentTree {
             return 0;
 
 
-
         int mid = getMid(begin, end);
-        System.out.println("sum mid: "+mid);
+        System.out.println("sum mid: " + mid);
 
         return getRangeSum(begin, mid, queryStart, queryEnd, 2 * current + 1) +
-                getRangeSum(mid+1,end,queryStart,queryEnd,2*current+2);
-
+                getRangeSum(mid + 1, end, queryStart, queryEnd, 2 * current + 2);
 
 
     }
 
     // The function to update a value in input array and segment tree.
     // It uses updateValueUtil() to update the value in segment tree
-    void updateValue(int arr[], int n, int i, int new_val)
-    {
+    void updateValue(int arr[], int n, int i, int new_val) {
         // Check for erroneous input index
         if (i < 0 || i > n - 1) {
             System.out.println("Invalid Input");
@@ -160,8 +157,7 @@ public class SegmentTree {
         i    --> index of the element to be updated. This index is in
                  input array.
        diff --> Value to be added to all nodes which have i in range */
-    void updateValueUtil(int begin, int end, int i, int diff, int current)
-    {
+    void updateValueUtil(int begin, int end, int i, int diff, int current) {
         // Base Case: If the input index lies outside the range of
         // this segment
         if (i < begin || i > end)

@@ -14,7 +14,7 @@ public class BinaryTreeProb extends BaseProblem {
         System.out.println(getClass().getSimpleName());
 
         createTree();
-        System.out.println("Height of Tree "+tree.getDepth());
+        System.out.println("Height of Tree " + tree.getDepth());
 
     }
 
@@ -28,11 +28,10 @@ public class BinaryTreeProb extends BaseProblem {
      * //	  4
      */
     private void createTree() {
-    	tree.root=node1;
+        tree.root = node1;
         tree.root.right = node3;
         tree.root.left = node2;
         node2.left = node4;
-
     }
 
 }

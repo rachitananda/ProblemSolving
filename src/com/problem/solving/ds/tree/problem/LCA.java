@@ -185,6 +185,8 @@ public class LCA {
             if (root.right != null &&  getPathFromRoot(root.right,pathTillNode)) {
                 return true;
             }
+            // If not present in subtree rooted with root, remove root from
+            // path[] and return false
             path.remove(path.size()-1);
             return false;
 

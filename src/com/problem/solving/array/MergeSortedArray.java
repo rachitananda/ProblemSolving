@@ -31,7 +31,7 @@ public class MergeSortedArray {
         in.close();*/
 
 
-        mergeSortedArray1(array1, array2);
+        mergeSortedArray(array1, array2);
 
     }
     //TODO not working

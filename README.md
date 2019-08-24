@@ -41,7 +41,7 @@ Sorting
 - Selection sort
 - Merge sort
 - Heap sort
-- Quick sort
+- Quick sort *
 
 String
 - Merge String Alternate
@@ -54,26 +54,27 @@ Tree
 - Binary Tree - get depth
 - Binary Tree Traversal: Inorder, Preorder,PostOrder, LevelOrder/BFS
 - Binary Search Tree , insert, delete, search
-- Binary Heap - MinHeap, MaxHeap
-- Lowest Common Ancestor
+- Binary Heap - MinHeap, MaxHeap *
+- Lowest Common Ancestor *
 - Boundary Traversal Tree
 - Foldable Binary Tree
 - Diameter of Tree
 - Diameter of Tree DFS TODO
 - Check if BST
 - Vertical Traversal of tree
-- Top view Tree
+- Top view & Bottom Tree
 - Right & Left View tree
 - Level Order Spiral Traversal
+- DIstance between 2 nodes tree TODO
 
 Advanced DS
-- Segment Tree
+- Segment Tree *
 - Range Minimum Query based on Segment Tree
 
 Matrix
 - Find Element
 - sum of sub matrices (todo)
-- K’th Smallest Element in  2D sorted Array Matrix
+- K’th Smallest Element in  2D sorted Array Matrix *
 - Boolean Matrix
 - Rotate matrix by 90
 

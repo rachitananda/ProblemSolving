@@ -13,13 +13,13 @@ public class TreeVerticalOrder {
     private BinaryTree tree;
     //Tree map retains keys in ascending order
     java.util.TreeMap<Integer, ArrayList<Integer>> treeMap = new TreeMap<>();
-     java.util.TreeMap<Integer, ArrayList<Node>> treeMapLevelOrder = new TreeMap<>();
+    java.util.TreeMap<Integer, ArrayList<Node>> treeMapLevelOrder = new TreeMap<>();
 
     public static void main(String[] args) {
         TreeVerticalOrder problem = new TreeVerticalOrder();
         problem.createTree();
 
-       //   problem.printTreeVertically(problem.tree.root); //vertical traversal
+        //   problem.printTreeVertically(problem.tree.root); //vertical traversal
         problem.verticalLevelOrder(problem.tree.root);//level order
     }
 
@@ -142,7 +142,7 @@ public class TreeVerticalOrder {
      *
      * @param root
      */
-   public void verticalLevelOrder(Node root) {
+    public void verticalLevelOrder(Node root) {
         treeMapLevelOrder = new TreeMap<>();
         int index = 0;
 
@@ -171,8 +171,6 @@ public class TreeVerticalOrder {
         printTopViewMap();
 
     }
-
-
 
 
     private void addInMap(int key, Node node) {
@@ -205,6 +203,53 @@ public class TreeVerticalOrder {
         for (Map.Entry<Integer, ArrayList<Node>> entry : treeMapLevelOrder.entrySet()) {
             //first value inserted
             System.out.println(entry.getValue().get(0).data);
+
+        }
+    }
+
+    /**
+     * https://www.geeksforgeeks.org/bottom-view-binary-tree/
+     *
+     * @param root
+     */
+    public void bottomViewTree(Node root) {
+
+        treeMapLevelOrder = new TreeMap<>();
+        Queue<Node> queue = new LinkedList<>();
+        root.horizontalDistance = 0;
+        queue.add(root);
+        addInMap(0, root);
+
+        while (!queue.isEmpty()) {
+
+            Node node = queue.poll();
+
+            if (node.left != null) {
+                queue.add(node.left);
+                node.left.horizontalDistance = node.horizontalDistance - 1;
+                addInMap(node.left.horizontalDistance, node.left);
+            }
+
+            if (node.right != null) {
+                queue.add(node.right);
+                node.right.horizontalDistance = node.horizontalDistance + 1;
+                addInMap(node.right.horizontalDistance, node.right);
+            }
+
+        }
+
+        printBottomViewMap();
+
+
+    }
+
+    private void printBottomViewMap() {
+        //Tree map retains keys in ascending order
+        System.out.println("------BOTTOM VIEW-------");
+        for (Map.Entry<Integer, ArrayList<Node>> entry : treeMapLevelOrder.entrySet()) {
+            //first value inserted
+            int size = entry.getValue().size() - 1;
+            System.out.println(entry.getValue().get(size).data);
 
         }
     }
