@@ -70,6 +70,7 @@ Tree
 Advanced DS
 - Segment Tree *
 - Range Minimum Query based on Segment Tree
+- Trie TODO
 
 Matrix
 - Find Element
@@ -105,6 +106,8 @@ Dynamic Programming
 - MinInsertionsToFormPalindrome
 - SubsequenceAdjacentElementDiff
 - 0-1 Knapsack
+- Min cost path
+- Longest palindrome substring
 
 BackTracking
 - RatinMaze
@@ -113,7 +116,8 @@ BackTracking
 Graph
 - BFS
 - DFS
-- TODO BFS/DFS for unconnected nodes
+- FindIslands
+- Count trees in forest
 
 
 
