@@ -1,13 +1,13 @@
 package com.problem.solving;
 
-import com.problem.solving.ds.queue.BlockingQueue;
+import com.problem.solving.dynamicprogramming.LongestPathMatrix;
 
 
 public class ProblemSolver {
 
 	public static void main(String[] args) {
 
-		new BlockingQueue().execute();
+		new LongestPathMatrix().execute();
 	}
 	
 

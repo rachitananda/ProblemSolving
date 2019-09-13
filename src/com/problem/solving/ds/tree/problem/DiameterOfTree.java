@@ -169,7 +169,7 @@ public class DiameterOfTree {
 
     }
 
-    private int diameterOptimised()
+    private int diameterOptimised()//TODO not working
     {
         if (tree.root == null)
             return 0;

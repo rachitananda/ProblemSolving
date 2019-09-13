@@ -11,33 +11,31 @@ import java.util.Scanner;
  */
 public class SortArray0s1s2s extends BaseProblem {
 	
-	//WRONG CODE
-
-
-	
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-//		sort(arr, arr.length);
-		// Utils.printArray(sort(arr, arr.length));
+
 		Scanner in = new Scanner(System.in);
 		StringBuffer sb = new StringBuffer();
+		System.out.println("Enter T:");
 		int t= in.nextInt();
 		for(int i = 0; i<t; i++){
+			System.out.println("Enter N:");
 		    int n= in.nextInt();
 		    int arr[] = new int[n];
+			System.out.println("Enter Array:");
 		    for(int j=0;j<n ;j++ ){
 		       arr[j]=in.nextInt();
 		    }
-		    
+			in.close();
 		    arr=sort(arr);
 		    //append to output
+			System.out.println("Output :");
 		   for(int k =0;k<n;k++){
 		       sb.append(arr[k]+" ");
 		   }
 		    sb.append("\n");
 		}
-		in.close();
+
 		System.out.print(sb);
 	}
 	
@@ -55,6 +53,7 @@ public class SortArray0s1s2s extends BaseProblem {
 		                 arr[lo] = arr[mid];
 		                 arr[mid]= temp;
 		                 lo++;
+		                 mid++;
 		                break;
 		            case 1:
 		                mid++;

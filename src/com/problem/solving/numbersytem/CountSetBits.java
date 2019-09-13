@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class CountSetBits {
 
 	public static void main(String[] args) {
-		// code
+
 		Scanner in = new Scanner(System.in);
 		int t = in.nextInt();
 		int output[] = new int[t];

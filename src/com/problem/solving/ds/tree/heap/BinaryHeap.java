@@ -46,6 +46,7 @@ abstract public class BinaryHeap {
 
     public int getParentIndex(int index) {
         //ceil to fix round down of 0.5 to 0 when index is 2
+        //ceil rounds off towords the -infinity ie the lower no
         return (int) Math.ceil((index - 1) / 2.0);
     }
 

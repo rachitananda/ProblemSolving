@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/
+ * Search in a row wise and column wise sorted matrix
  *
  * @author rachita
  */

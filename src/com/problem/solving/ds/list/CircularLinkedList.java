@@ -12,8 +12,6 @@ public class CircularLinkedList extends BaseProblem {
 
 	@Override
 	public void execute() {
-
-		
 		Scanner in = new Scanner(System.in);
 		int t= in.nextInt();
 		for (int i=0;i<t;i++) {

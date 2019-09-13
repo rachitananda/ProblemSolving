@@ -13,9 +13,7 @@ public class RotateLinkedList {
 
         RotateLinkedList problem = new RotateLinkedList();
         problem.createLinkedList();
-
     }
-
 
     private void createLinkedList() {
         Node n10 = new Node(10);
@@ -36,7 +34,6 @@ public class RotateLinkedList {
 
         linkedList.rotateByK(4);
         linkedList.printList();
-
     }
 
 
@@ -64,7 +61,6 @@ public class RotateLinkedList {
                 System.out.println(" ->" + temp.key);
                 temp = temp.next;
             }
-
         }
 
         public void rotateByK(int k) {
@@ -76,11 +72,10 @@ public class RotateLinkedList {
             Node temp = head;
 
             while (temp != null && count < k) {
-
                 count++;
                 temp = temp.next;
-
             }
+
             if(temp==null){
                 return;
             }

@@ -27,15 +27,13 @@ public class Queue {
 	}
 	
 	void dequeue(){
-		
-	
+
 		if(!isEmpty()){
 			if(rear==front){
 				//1 item
 				front= -1;
 				rear=-1;
 			}
-			
 			front++;
 			size--;
 		}

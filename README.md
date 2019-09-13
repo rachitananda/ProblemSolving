@@ -10,7 +10,7 @@ Array Problems
 - Sort0s1s2s
 - K’th Largest Element in Unsorted Array
 - Sort by frequency
-- Merge Sorted Array TODo
+- Merge Sorted Array
 - First1inSorted0s1s
 
 
@@ -65,7 +65,8 @@ Tree
 - Top view & Bottom Tree
 - Right & Left View tree
 - Level Order Spiral Traversal
-- DIstance between 2 nodes tree TODO
+- Distance between 2 nodes tree TODO
+- Priority Queue TODO
 
 Advanced DS
 - Segment Tree *

@@ -18,7 +18,6 @@ public class MergeSort extends BaseProblem {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
 		mergeSort(arr, 0, arr.length - 1);
 		Utils.printArray(arr);
 	}

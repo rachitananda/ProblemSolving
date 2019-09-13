@@ -5,10 +5,12 @@ package com.problem.solving.array;
  * Next problem - https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/
  */
 public class MergeSortedArray {
-    //TODO not working
 
     static int array1[] = {1, 5, 9, 10, 15, 20};
     static int array2[] = {2, 3, 8, 13};
+
+    static int arr1[] = {2};
+    static int arr2[] = {3, 10};
 
     public static void main(String[] args) {
 
@@ -34,51 +36,43 @@ public class MergeSortedArray {
         mergeSortedArray(array1, array2);
 
     }
-    //TODO not working
 
-    private static void mergeSortedArray1(int[] a, int[] b) {
+    public static void mergeSortedArray(int[] arr1, int[] arr2) {
+        int n1 = arr1.length;
+        int n2 = arr2.length;
 
+        int i = n1 - 1;
+        int j = n2 - 1;
 
-        int last, key;
-        int n1 = a.length;
-        int n2 = b.length;
-        for (int i = 0; i < b.length; i++) {//b array
-            last = a[a.length - 1];
-            key = b[i];
-            int j = 0;
-            boolean isFound = false;
-//            if (b[i] > a[j]) {
+        // int temp = arr1[i];
+        int last = arr1[i];
+        while (j >= 0) {
 
-            for (j = 0; j < a.length - 1 && b[i] > a[j]; j++) {
-                a[j + 1] = a[j];
+            if (arr2[j] > arr1[i]) {
+                //rotate arr 1 ahead
+                for (int k = n1 - 1; k >= i + 1; k--) {
+                    arr1[k] = arr1[k - 1];
+                }
+                //swap
+                if (i != n1 - 1) {
+                    arr1[i + 1] = arr2[j];
+                    arr2[j] = last;
+                }
+                j--;
+                last = arr1[n1 - 1];
             }
-//                    if(a[j]>key) {//bi
-////                    a[j + 1] = a[j];
-//                    if (!isFound) {
-//                        a[j] = key;
-//                        isFound = true;
-//                    }
-            if (last > b[i]) {
-                b[i] = last;
-
+            if (i > 0) {
+                i--;
             }
-
-
-//            }
-            System.out.println("i:" + i);
-            print(a, b);
-
-
         }
 
-        //merge n sort remaining 2nd array
-
+        print(arr1, arr2);
 
     }
 
+
     static private void print(int a[], int b[]) {
 
-        //print
         System.out.println("Merged array\n");
 
         for (int i = 0; i < a.length; i++) {
@@ -89,61 +83,6 @@ public class MergeSortedArray {
         for (int i = 0; i < b.length; i++) {
             System.out.print(" " + b[i] + " ");
         }
-
     }
 
-    private static void mergeSortedArray(int[] arr1, int[] arr2) {
-
-        int j = 0;
-        int temp;
-        int n2 = arr2.length;
-        for (int i = 0; i < arr1.length; i++) {
-            temp = arr1[i];
-            if (j == n2 - 1) {
-                break;
-            }
-
-            if (arr1[i] > arr2[j]) {
-                //swap
-                int x = arr1[i];
-                arr1[i] = arr2[j];
-                arr2[j] = x;
-                j++;
-            }
-        }
-
-        //merge n sort remaining 2nd array
-
-        if (j > 0) {
-            for (int i = j - 1; i < n2; i++) {
-
-                if (j == n2) {
-                    break;
-                }
-
-                temp = arr2[i];
-                if (arr2[i] > arr2[j]) {
-
-                    int x = arr2[i];
-                    arr2[i] = arr2[j];
-                    arr2[j] = x;
-                    j++;
-                } else {
-                    break;
-                }
-            }
-        }
-        //print
-        System.out.println("Merged array\n");
-
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.print(" " + arr1[i] + " ");
-        }
-        System.out.println("\n");
-
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.print(" " + arr2[i] + " ");
-        }
-
-    }
 }

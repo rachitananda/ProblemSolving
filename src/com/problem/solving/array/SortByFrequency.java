@@ -28,8 +28,6 @@ public class SortByFrequency {
             int count = hmap.getOrDefault(number, 0);
             hmap.put(number, count + 1);
             outputArray.add(number);
-
-
         }
 
         SortComparator sortComparator = new SortComparator(hmap);
@@ -40,8 +38,6 @@ public class SortByFrequency {
         for (Integer i : outputArray) {
             System.out.println(" " + i);
         }
-
-
     }
 
 
@@ -71,11 +67,7 @@ public class SortByFrequency {
             } else {
                 return freq;
             }
-
-
         }
     }
-
-
 
 }

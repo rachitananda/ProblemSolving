@@ -50,7 +50,7 @@ public class Graph {
     }
 
     /**
-     * uses QUEUE LEVEL order
+     * uses QUEUE LEVEL order BFS
      * https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
      * @param src
      */

@@ -34,27 +34,17 @@ public class MissingNoInArray extends BaseProblem{
 			System.out.println("Missing no "+findMissingNumber(arr));
 		}
 		reader.close();
-		
-		
-		
 	}
 
 	private int findMissingNumber(int[] arr) {
-		// TODO Auto-generated method stub
 		for(int i=0;i<arr.length;i++) {
 			if(arr[i]+1 !=arr[i+1]) {	
 				
 				return arr[i]+1;
 			}
-
-			
 		}
-		
 		return -1;
 	}
-	
-	
-	
 
 
 }

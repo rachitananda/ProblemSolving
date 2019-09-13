@@ -2,6 +2,9 @@ package com.problem.solving.ds.stack;
 
 /**
  * https://www.geeksforgeeks.org/design-and-implement-special-stack-data-structure/
+ * Design a Data Structure SpecialStack that supports all the stack operations like push(), pop(), isEmpty(), isFull()
+ * and an additional operation getMin() which should return minimum element from the SpecialStack. All these operations
+ * of SpecialStack must be O(1).
  */
 public class SpecialStack {
 
@@ -27,12 +30,12 @@ public class SpecialStack {
     int[] stack;
     int[] minStack;
 
-    int top ;
+    int top;
     int minTop;
 
     public SpecialStack() {
         top = -1;
-        minTop=-1;
+        minTop = -1;
         stack = new int[MAX];
         minStack = new int[MAX];
         minStack[0] = Integer.MAX_VALUE;

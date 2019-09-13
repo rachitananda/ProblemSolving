@@ -11,13 +11,12 @@ import java.util.Arrays;
  *
  * @author rachita
  */
-public class BinarySearch extends BaseProblem {
+public class   BinarySearch extends BaseProblem {
     //works on sorted array
     int arr[] = new int[]{1, 3, 6, 9, 11, 23, 55};
 
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
         System.out.println(getClass().getSimpleName());
         Arrays.sort(arr);
         search(6);

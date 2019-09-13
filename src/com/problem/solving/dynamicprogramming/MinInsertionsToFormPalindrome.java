@@ -37,10 +37,10 @@ public class MinInsertionsToFormPalindrome {
             return 0;
         }
 
-        if (chars[low] == chars[high]) {
+        if (chars[low] == chars[high]) {// odd - aba
             return minInsertionCount(chars, low + 1, high - 1);
         } else {
-            //ab
+            //ab- even
             return 1 + Math.min(minInsertionCount(chars, low, high - 1),minInsertionCount(chars, low+1, high));
         }
 

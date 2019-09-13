@@ -44,7 +44,6 @@ public class BinarySearchTree extends BinaryTree {
 		} else {
 			return searchBST(key, root.left);
 		}
-
 	}
 
 	void insert(int key) {

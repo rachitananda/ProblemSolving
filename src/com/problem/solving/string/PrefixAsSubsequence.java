@@ -24,8 +24,8 @@ public class PrefixAsSubsequence extends BaseProblem {
 		int  count = 0;
 		char item = sArr[count];
 		for (int j = 0; j < tArr.length; j++) {
+
 			if (sArr[count] == tArr[j]) {
-				
 				if (count< sArr.length - 1) {
 					count++;
 				} else {

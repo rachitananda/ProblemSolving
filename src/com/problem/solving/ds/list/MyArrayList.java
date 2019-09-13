@@ -1,10 +1,7 @@
 package com.problem.solving.ds.list;
 
 import com.problem.solving.BaseProblem;
-import com.problem.solving.Utils;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -43,18 +40,15 @@ public class MyArrayList extends BaseProblem {
         } else {
             throw new ArrayIndexOutOfBoundsException();
         }
-
     }
 
     public void add(Object object) {
 
-        if (  list.length -actualSize < 5) {
+        if (list.length - actualSize < 5) {
             increaseSize();
         }
 
-            list[actualSize++] = object;
-
-
+        list[actualSize++] = object;
     }
 
     private void increaseSize() {
@@ -78,9 +72,9 @@ public class MyArrayList extends BaseProblem {
         list.add(new Integer(11));
         list.add(new Integer(12));
         printList(list);
-        System.out.println("Size"+list.size());
+        System.out.println("Size" + list.size());
         list.remove(1);
-        System.out.println("get at index 1 "+list.get(1));
+        System.out.println("get at index 1 " + list.get(1));
         printList(list);
     }
 
